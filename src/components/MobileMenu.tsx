@@ -1,8 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from 'lucide-react';
+import { X, Menu } from "lucide-react";
+import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip"; // adjust import as needed
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,13 +25,38 @@ export default function MobileMenu() {
             <a href="/" className="text-2xl font-semibold hover:text-primary">
               Home
             </a>
-            <a href="/token" className="text-2xl font-semibold hover:text-primary">
-              Explorer
-            </a>
-            <a href="/how-to" className="text-2xl font-semibold hover:text-primary">
-              Yield Reactor
-            </a>
-           
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a
+                    href="#"
+                    onClick={e => e.preventDefault()}
+                    className="text-2xl font-semibold opacity-50 cursor-not-allowed"
+                    aria-disabled="true"
+                  >
+                    Explorer
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Coming soon!</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a
+                    href="#"
+                    onClick={e => e.preventDefault()}
+                    className="text-2xl font-semibold opacity-50 cursor-not-allowed"
+                    aria-disabled="true"
+                  >
+                    Yield Reactor
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Coming soon!</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </nav>
         </div>
       )}
