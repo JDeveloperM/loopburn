@@ -25,10 +25,10 @@ export default function MobileMenu() {
               Home
             </a>
             <a href="/token" className="text-2xl font-semibold hover:text-primary">
-              Token
+              Explorer
             </a>
             <a href="/how-to" className="text-2xl font-semibold hover:text-primary">
-              How To
+              Yield Reactor
             </a>
            
           </nav>
