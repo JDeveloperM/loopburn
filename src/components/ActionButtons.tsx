@@ -20,7 +20,7 @@ export default function ActionButtons() {
               onClick={(e) => e.preventDefault()}
               aria-disabled="true"
             >
-              Execute Loop
+              Execute Hyper Loop
             </Button>
           </TooltipTrigger>
           <TooltipContent>
