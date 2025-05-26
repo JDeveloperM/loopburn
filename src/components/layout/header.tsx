@@ -39,7 +39,7 @@ export function Header() {
                   className="hover:text-primary transition-colors opacity-50 cursor-not-allowed"
                   aria-disabled="true"
                 >
-                  Exproler
+                  Explorer
                 </a>
               </TooltipTrigger>
               <TooltipContent>
