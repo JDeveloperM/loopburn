@@ -47,7 +47,7 @@ export default function Home() {
 
           <div className="max-w-[300px] md:max-w-[600px] text-center md:text-center mt-4">
             <p className="text-base md:text-lg text-muted-foreground">
-              $LPB is a deflationary ERC-20 token on the Sonic network designed to boost trading volume 
+              $LBP is a deflationary ERC-20 token on the Sonic network designed to boost trading volume 
               and incentivize liquidity — all without relying on token taxes. Through a unique burn-and-recycle mechanism, 
               LoopBurn attracts liquidity yield farmers while continuously reducing the total supply of $LPB over time.
             </p>
