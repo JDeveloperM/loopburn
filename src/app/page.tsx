@@ -26,7 +26,7 @@ export default function Home() {
           {/* Compact Contract Address Display */}
           <div className="flex items-center justify-center bg-card/50 backdrop-blur-sm p-2 rounded-lg max-w-2xl w-full gap-2">
             <p className="text-xs text-muted-foreground">CA:</p>
-            <code className="font-mono text-xs"> C o m i n g --   S o o n </code>
+            <code className="font-mono text-xs"> 0x7b585a38519b307746e6a9c9734a34f7fb1b6d0d </code>
             <CopyButton text="0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D" />
           </div>
           
